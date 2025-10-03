@@ -81,7 +81,109 @@ print(msg4)
 msg5='こんにわ"太郎"君'
 print(msg5)
 
-m = float(input('長さをメートルで入力＜'))
-cm = m*100
-print(cm)
+# m = float(input('長さをメートルで入力＜'))
+# cm = m*100
+# print(cm)
 
+# 【10/1 P98～】
+price =1980
+label = str(price) + '円'
+print(type(label))
+print(label)
+
+# 確認・応用問題　P99
+orange = 300
+n =  6 
+print(orange*n)
+orange = 400
+n = 5
+print(orange*n)
+
+name = '太郎'
+message = 'おはよう'
+print(name+'くん、'+message)
+name = '次郎'
+message = 'こんにちわ'
+print(name+'さん、'+message)
+
+teihen = 7
+jouhen =3
+takasa =4
+menseki =(jouhen+teihen)*takasa/2
+print(type(menseki))
+print(menseki)
+
+candy = 100
+n = 6
+answer = candy // n 
+print('ひとり'+str(answer)+'個ずつ')
+
+# 第4章　制御構造
+a=5
+print(a<10)
+print(a>10)
+b=0.1+0.1+0.159
+c=round(0.1+0.1+0.1,5)
+print(b==0.3,c==0.3)
+
+score = int(input('点数を入力　'))
+if score >=80:
+    print('おめでとう')
+    print('合格、成績はAです')
+elif score >=60:
+    print('頑張りましたね')
+    print('合格、成績はBです')
+elif score >=40:
+    print('次は更に頑張りましょう')
+    print('合格、成績はCです')
+else:
+    print('残念！')
+    print('追試')
+print('おしまい')
+
+age = int(input('年齢を入力　'))
+if age >=10:
+    height = int(input('身長を入力　'))
+    if height >=140:
+        print('乗れる')
+    else:
+        print('身長制限の為、乗れない')
+else:
+    print('年齢制限の為、乗れない')
+
+
+if (age >=10) and (age < 75)and (140 <= height < 190):
+    print('乗れる')
+else:
+    print('乗れない')
+
+key =input('ジェットコースターは好きですか？［Y/N］')
+if (key =='Y' or key == 'y'):
+    print('明日は遊園地に行く')
+elif (key == 'N' or key == 'n'):
+    print('明日は動物園に行く')
+else:
+    print('YかNで答えて下さい')
+
+for i in range(5):
+    print(i)
+
+for j in range(1,10):
+    print(2*j,end='　')
+    print()
+
+for i in range(1,10):
+    for j in range(1,10):
+        print(i*j,end=' ')
+    print()
+
+for i in range(0,50,5):
+    print(i,end=' ')
+print()
+
+for i in range(10,-20,-1):
+    print(i,end=' ')
+print()
+
+
+    
